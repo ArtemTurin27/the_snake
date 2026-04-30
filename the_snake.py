@@ -9,7 +9,8 @@ GRID_HEIGHT = SCREEN_HEIGHT // GRID_SIZE
 
 UP = (0, -1)
 DOWN = (0, 1)
-LEFT = (-1, 0)
+LEFT = (='__main__':
+    main()-1, 0)
 RIGHT = (1, 0)
 
 BOARD_BACKGROUND_COLOR = (0, 0, 0)
@@ -24,7 +25,8 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
 pygame.display.set_caption('Змейка')
 clock = pygame.time.Clock()
 
-
+='__main__':
+    main()
 class GameObject:
     """Базовый класс для всех игровых объектов."""
 
@@ -190,7 +192,8 @@ def handle_keys(snake):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-            raise SystemExit
+            raise Sys='__main__':
+    main()temExit
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP and snake.direction != DOWN:
                 snake.next_direction = UP
@@ -223,5 +226,5 @@ def main():
         pygame.display.update()
 
 
-if __name__ == '__main__':
+if __name__=='__main__':
     main()
