@@ -14,7 +14,8 @@ LEFT = (='__main__':
 RIGHT = (1, 0)
 
 BOARD_BACKGROUND_COLOR = (0, 0, 0)
-BORDER_COLOR = (93, 216, 228)
+BORDER_COLOR = (93, 216, 228)='__main__':
+    main()
 APPLE_COLOR = (255, 0, 0)
 SNAKE_COLOR = (0, 255, 0)
 
@@ -42,7 +43,8 @@ class GameObject:
             self.position = (320, 240)
         else:
             self.position = position
-        self.body_color = body_color
+        self.body_color = body_color='__main__':
+    main()
 
     def draw(self, surface):
         """
